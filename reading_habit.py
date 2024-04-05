@@ -3,8 +3,7 @@ from tkinter import ttk
 from tkinter import messagebox
 from tkcalendar import DateEntry
 import sqlite3
-from lib_arao import BookSearch_in_AraoLib
-import lib_list
+#import lib_list
 
 
 #プルダウンの中身
@@ -107,18 +106,12 @@ class MainWindow(tk.Frame):
         btn_FukLib_Map.grid(row=4, column=1,pady=5)
         #btn_FukLib_Map.config(command=self.)
 
-    #荒尾図書館
+    #福岡県立図書館
         def botton_clicked_a():
-            BookSearch_in_AraoLib()
-        btn_Arao_lib = tk.Button(self.master, text="荒尾図書館",font=12, bg="#a492d3",fg="purple",command=botton_clicked_a)
-        btn_Arao_lib.grid(row=4, column=2,pady=5)
-       
-
-
-        
-        #btn_Arao_lib.config(command=button_clicked.BookSearch_in_AraoLib)
-        
-    
+            BookSearch_in_BookSearch_in_FukPref_Lib()
+            btn__FukPref_lib = tk.Button(self.master, text="福岡県立図書館",font=12, bg="#a492d3",fg="purple",command=botton_clicked_a)
+            btn_Arao_lib.grid(row=4, column=2,pady=5)     
+         
     #スタイルの適用
         style=ttk.Style()
         style.theme_use("classic")
