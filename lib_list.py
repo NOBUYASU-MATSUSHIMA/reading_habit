@@ -5,7 +5,7 @@ import pandas as pd
 
 def api_data():  
     url = "https://api.calil.jp/library?appkey={key}&pref={pref}&city={city}&format=json&callback="
-    res = url.format(key="542e9b990d7470446df1c68aa8891e71", pref="福岡県", city="福岡市")
+    res = url.format(key="", pref="福岡県", city="福岡市")
 
     api_data = requests.get(res).json()
 
